@@ -9,8 +9,8 @@ This script helps you to scrape JSON-formatted data from API and then export the
 ## Requirements
  - PhantomJS
  - Node packages:
- -- q
- -- xlsx
+   - q
+   - xlsx
 
 ## Execution
 Execute the script by command: 
