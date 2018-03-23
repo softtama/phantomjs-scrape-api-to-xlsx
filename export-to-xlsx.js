@@ -12,7 +12,7 @@ var Products = [], Indices = [],
     Q       = require('q'),
     XLSX    = require('XLSX'),
     
-	apiUrl  = 'https://demo.whoisrizkipratama.net/phantomjs-scrape-api-to-xlsx-api-sample',
+    apiUrl  = 'https://demo.whoisrizkipratama.net/phantomjs-scrape-api-to-xlsx-api-sample',
     
     rootPath            = 'D:/Repos/',
     subDirPath          = 'phantomjs-scrape-api-to-xlsx/',
