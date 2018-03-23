@@ -14,15 +14,15 @@ var Products = [], Indices = [],
 	Q		= require('q'),
 	XLSX    = require('XLSX'),
 	
-	apiUrl				= 'https://demo.whoisrizkipratama.net/phantomjs-scrape-api-to-xlsx-api-sample',
+	apiUrl	= 'https://demo.whoisrizkipratama.net/phantomjs-scrape-api-to-xlsx-api-sample',
 
 	rootPath			= 'D:/Repos/',
-	subDirPath          = 'phantomjs-scrape-api-to-xlsx/',
+	subDirPath			= 'phantomjs-scrape-api-to-xlsx/',
 	productIndicesPath	= rootPath + subDirPath + 'product-data-indices.txt',
 	fileName        	= 'product-report.xlsx',
 
-    maxProductsPerSheet	= 100,				// Create new sheet after 100 product added
-	maxProductsPerSheetIncrement = 100;
+    maxProductsPerSheet				= 100,	// Create new sheet after 100 product added
+	maxProductsPerSheetIncrement 	= 100;
 	
 /* Page settings */
 page.onConsoleMessage = function (msg) { console.log(msg); };
@@ -39,16 +39,16 @@ var inArray = function(needle) {
 	var findNaN = needle !== needle;
 	var indexOf;
 
-	if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+	if (!findNaN && typeof Array.prototype.indexOf === 'function') {
 		indexOf = Array.prototype.indexOf;
 	} else {
 		indexOf = function(needle) {
 			var i = -1, index = -1;
 
-			for(i = 0; i < this.length; i++) {
+			for (i = 0; i < this.length; i++) {
 				var item = this[i];
 
-				if((findNaN && item !== item) || item === needle) {
+				if ((findNaN && item !== item) || item === needle) {
 					index = i;
 					break;
 				}
